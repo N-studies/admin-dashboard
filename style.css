@@ -47,7 +47,6 @@ ul {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(12, 50px);
-  
 }
 
 .sidebar-list-2 {
@@ -61,15 +60,12 @@ ul {
   width: 150px;
 }
 
-
 .sidebar li {
-  
   display: flex;
   gap: 15px;
   margin-top: 20px;
   margin-left: 20px;
 }
-
 
 .logo img {
   width: 35px;
@@ -82,4 +78,39 @@ ul {
   gap: 10px;
   margin-left: 10px;
   align-items: center;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 3fr 2fr;
+}
+
+.search {
+  border: 2px solid;
+  display: flex;
+  align-items: flex-end;
+}
+
+input {
+  height: 20px;
+  background-color: rgb(233, 233, 233);
+  border: 1px solid white;
+  border-radius: 15px ;
+  width: 300px;
+}
+
+.greet {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: flex;
+}
+
+.top-nav {
+  display: flex;
+}
+
+.nav-buttons {
+  display: flex;
+  grid-column-start: 2;
 }
