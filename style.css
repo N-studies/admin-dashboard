@@ -33,6 +33,7 @@ ul {
   display: grid;
   grid-template-columns: minmax(225px, 0.8fr) 4fr;
   grid-template-rows: 1fr 3fr;
+  gap: 20px;
 }
 
 .sidebar {
@@ -42,7 +43,7 @@ ul {
   grid-row-end: 3;
   /*background-color: #6495ed;*/
   color: white;
-  background-color: rgb(25, 146, 212);
+  background-color: rgb(50, 124, 235);
   font-weight: 550;
   font-family: sans-serif;
   display: grid;
@@ -83,21 +84,22 @@ ul {
 
 .header {
   display: grid;
-  grid-template-rows: 1fr 2fr;
-  grid-template-columns: 3fr 2fr;
+  grid-template-rows: repeat(2, 80px);
+  grid-template-columns: repeat(2,minmax(250px,500px))
 }
 
 .search {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 input {
-  height: 20px;
+  height: 30px;
   background-color: rgb(233, 233, 233);
   border: 1px solid white;
   border-radius: 15px;
-  width: 300px;
+  width: clamp(300px,500px,800px);
 }
 
 .greet {
@@ -125,7 +127,8 @@ input {
   font-size: 14px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  gap: 15px;
+  
 }
 .user {
   font-size: x-large;
@@ -133,7 +136,7 @@ input {
 
 button {
   color: white;
-  background-color: rgb(25, 146, 212);
+  background-color: rgb(50, 124, 235);
   font-weight: bold;
   padding-left: 20px;
   padding-right: 20px;
@@ -147,4 +150,24 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: flex-end
+  
+
+}
+
+.top-nav img {
+  height: 40px;
+  width: auto;
+}
+
+.top-nav .alert-icon {
+  height: 20px;
+} 
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+  gap: 15px;
 }
