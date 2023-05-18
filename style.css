@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 ul {
@@ -87,16 +88,15 @@ ul {
 }
 
 .search {
-  border: 2px solid;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 input {
   height: 20px;
   background-color: rgb(233, 233, 233);
   border: 1px solid white;
-  border-radius: 15px ;
+  border-radius: 15px;
   width: 300px;
 }
 
@@ -113,4 +113,38 @@ input {
 .nav-buttons {
   display: flex;
   grid-column-start: 2;
+}
+
+.greet img {
+  height: 75px;
+  width: auto;
+}
+
+.greet {
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.user {
+  font-size: x-large;
+}
+
+button {
+  color: white;
+  background-color: rgb(25, 146, 212);
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
