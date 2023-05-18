@@ -34,6 +34,7 @@ ul {
   grid-template-columns: minmax(225px, 0.8fr) 4fr;
   grid-template-rows: 1fr 3fr;
   gap: 20px;
+  padding-right: 50px;
 }
 
 .sidebar {
@@ -85,21 +86,28 @@ ul {
 .header {
   display: grid;
   grid-template-rows: repeat(2, 80px);
-  grid-template-columns: repeat(2,minmax(250px,500px))
+  grid-template-columns: 2fr 1fr;
 }
 
 .search {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: ;
+  gap: 10px;
 }
+
+.search img {
+  width: 25px;
+}
+
+
 
 input {
   height: 30px;
   background-color: rgb(233, 233, 233);
   border: 1px solid white;
   border-radius: 15px;
-  width: clamp(300px,500px,800px);
+  width: 90%;
 }
 
 .greet {
@@ -138,8 +146,8 @@ button {
   color: white;
   background-color: rgb(50, 124, 235);
   font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid white;
@@ -149,25 +157,25 @@ button {
 .nav-buttons {
   display: flex;
   align-items: center;
-  gap: 10px;
-  justify-content: flex-end
+  gap: 20px;
+    
   
 
 }
 
 .top-nav img {
-  height: 40px;
+  height: 50px;
   width: auto;
 }
 
 .top-nav .alert-icon {
-  height: 20px;
+  height: 23px;
 } 
 
 .top-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   font-weight: bold;
-  gap: 15px;
+  gap: 30px;
 }
