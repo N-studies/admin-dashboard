@@ -36,7 +36,7 @@ ul {
 .container {
   display: grid;
   grid-template-columns: minmax(225px, 0.8fr) 4fr;
-  grid-template-rows: minmax(200px, .7fr) 3fr;
+  grid-template-rows: minmax(200px, .7fr) 800px;
   
 }
 
