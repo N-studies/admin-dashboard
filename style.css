@@ -36,8 +36,7 @@ ul {
 .container {
   display: grid;
   grid-template-columns: minmax(225px, 0.8fr) 4fr;
-  grid-template-rows: minmax(200px, .7fr) 800px;
-  
+  grid-template-rows: minmax(200px, 0.7fr) 800px;
 }
 
 .sidebar {
@@ -95,7 +94,6 @@ ul {
   background-color: white;
   height: 175px;
   box-shadow: 2px 3px 5px 1px gainsboro;
-  
 }
 
 .search {
@@ -184,19 +182,17 @@ button {
 }
 
 .main-body {
-  
   display: grid;
-  grid-template-columns:  repeat(2, 400px) 300px;
+  grid-template-columns: repeat(2, 400px) 300px;
   grid-template-rows: repeat(2, 220px) 250px;
   gap: 10px;
-  
 }
 
-.main-cards, .side-cards {
+.main-cards,
+.side-cards {
   background-color: white;
   border-radius: 5px;
   box-shadow: 2px 3px 5px 1px gainsboro;
-  
 }
 
 .first {
@@ -243,13 +239,36 @@ button {
   display: grid;
 }*/
 
-
 .main-cards {
-  height: 170px;
+  height: 160px;
   width: 320px;
-  box-shadow: inset 8px 0 0 0 rgb(255, 170, 0), 2px 3px 5px 1px gainsboro;;
+  box-shadow: inset 8px 0 0 0 rgb(255, 170, 0), 2px 3px 5px 1px gainsboro;
   padding: 20px;
   margin-top: 30px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.685);
+  display: flex;
+  flex-direction: column;
+}
+
+.main-cards strong {
+  font-size: medium;
+  display: block;
+}
+
+.main-cards strong,
+.main-cards div {
+  color: black;
+}
+
+.inner-icon {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  align-self: flex-end;
+  margin-top: auto;
+  
+  
   
 }
 
@@ -257,7 +276,6 @@ button {
   height: 300px;
   width: 250px;
 }
-
 
 .main-cards:nth-child(odd) {
   justify-self: end;
@@ -271,7 +289,7 @@ button {
   /*Not a very good solution*/
 }
 
-.section{
+.section {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -283,10 +301,7 @@ button {
   padding-bottom: 20px;
   font-weight: normal;
   border-bottom: 1px solid rgba(0, 0, 0, 0.315);
-  
 }
-
-
 
 .no-border {
   border: none;
@@ -295,7 +310,7 @@ button {
 .right-side {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   margin-top: 30px;
 }
